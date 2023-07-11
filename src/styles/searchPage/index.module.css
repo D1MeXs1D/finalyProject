@@ -1,0 +1,89 @@
+.searchBody {
+  position: relative;
+  width: 1200px;
+}
+.searchBody .documenstFolders, .searchBody .documents {
+  position: absolute;
+  right: 0;
+}
+.searchBody .documenstFolders {
+  top: 200px;
+}
+.searchBody .documents {
+  top: 30px;
+  right: 250px;
+}
+.searchBody .tittle {
+  width: 817px;
+  color: #000;
+  font-size: 40px;
+  font-family: Ferry;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+.searchBody .subtittle {
+  margin: 0;
+  color: #000;
+  font-size: 20px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  color: #000;
+  font-size: 20px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  width: 534px;
+  flex-shrink: 0;
+}
+.searchBody .wrapper {
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchBody .wrapper .peopleIcon {
+  width: 360px;
+}
+
+@media (max-width: 440px) {
+  .searchBody {
+    position: relative;
+    width: 350px;
+  }
+  .searchBody .documenstFolders {
+    display: none;
+  }
+  .searchBody .documents {
+    width: 60px;
+    right: 0;
+    top: 120px;
+  }
+  .searchBody .tittle {
+    width: 300px;
+    font-size: 28px;
+    letter-spacing: 0.8px;
+    margin-bottom: 20px;
+  }
+  .searchBody .subtittle {
+    width: 300px;
+  }
+  .searchBody .wrapper {
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .searchBody .wrapper .peopleIcon {
+    width: 330px;
+  }
+}/*# sourceMappingURL=index.module.css.map */

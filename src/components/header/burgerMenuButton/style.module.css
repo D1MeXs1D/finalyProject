@@ -1,0 +1,142 @@
+.burgerMenu {
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+}
+.burgerMenu .line {
+  width: 30px;
+  height: 5px;
+  background-color: #029491;
+  opacity: 1;
+  transition: 0.5s;
+  z-index: 20;
+  border-radius: 2px;
+}
+.burgerMenu .line:nth-of-type(1) {
+  margin-bottom: 5px;
+}
+.burgerMenu .line:nth-of-type(3) {
+  margin-top: 5px;
+}
+.burgerMenu .lineOne {
+  animation: transformLineOne 0.5s linear forwards;
+}
+@keyframes transformLineOne {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+    margin-top: 10px;
+    background-color: white;
+    z-index: 200;
+  }
+}
+.burgerMenu .lineOneBack {
+  animation: transformLineOneBack 0.5s linear forwards;
+}
+@keyframes transformLineOneBack {
+  from {
+    transform: rotate(45deg);
+    margin-top: 10px;
+    background-color: white;
+  }
+  to {
+    transform: rotate(0deg);
+    margin-top: 0px;
+    background-color: #029491;
+    z-index: 200;
+  }
+}
+.burgerMenu .lineThree {
+  animation: transformLineThree 0.5s linear forwards;
+}
+@keyframes transformLineThree {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-45deg);
+    margin-top: -15px;
+    background-color: white;
+  }
+}
+.burgerMenu .lineThreeBack {
+  animation: transformLineThreeBack 0.5s linear forwards;
+}
+@keyframes transformLineThreeBack {
+  from {
+    transform: rotate(45deg);
+    margin-top: -15px;
+    background-color: white;
+  }
+  to {
+    transform: rotate(0deg);
+    margin-top: 5px;
+    background-color: #029491;
+    z-index: 200;
+  }
+}
+.burgerMenu .lineTwo {
+  border-radius: 2px;
+  animation: hiddenLineTwo 0.1s linear forwards;
+}
+@keyframes hiddenLineTwo {
+  0% {
+    opacity: 1;
+    scale: 1;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  100% {
+    scale: 0;
+    opacity: 0;
+    display: none;
+  }
+}
+.burgerMenu .lineTwoBack {
+  animation: LineTwoBack 0.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+@keyframes LineTwoBack {
+  from {
+    scale: 0;
+    opacity: 0;
+    display: none;
+  }
+  to {
+    width: 30px;
+    height: 5px;
+    background-color: #029491;
+    border-radius: 2px;
+    opacity: 1;
+    display: block;
+  }
+}
+
+.checkedClickInput {
+  display: none;
+  position: absolute;
+  z-index: -100;
+}
+
+.checkedClickInput:checked .line {
+  display: block;
+  background-color: antiquewhite;
+}
+
+@media (min-width: 600px) {
+  .burgerMenu {
+    display: none;
+  }
+}/*# sourceMappingURL=style.module.css.map */

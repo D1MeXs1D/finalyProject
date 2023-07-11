@@ -1,0 +1,57 @@
+.checkboxParent {
+  margin: 17px 0;
+}
+
+.text {
+  color: #000;
+  font-size: 16px;
+  font-family: Inter;
+  letter-spacing: 0.54px;
+  cursor: pointer;
+}
+
+.originalCheckbox {
+  display: none;
+  z-index: -1;
+}
+
+.originalCheckbox:checked + .checkboxDecorate {
+  opacity: 1;
+}
+
+.checkboxDecorate {
+  cursor: pointer;
+  opacity: 0.6;
+  display: inline-block;
+  vertical-align: sub;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border: 1px solid #000;
+  margin-right: 8px;
+}
+
+
+.checkboxDecorate::before {
+  content:  "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../image/icons/mainPage/checkMark.svg);
+  background-repeat:no-repeat;
+  background-size: contain;
+  scale: 0;
+  transition: 0.2s ease-in;
+}
+
+
+.originalCheckbox:checked +  .checkboxDecorate::before {
+  scale: 1;
+}
+
+
+@media (max-width:440px) { 
+  .checkboxParent {
+    display: none;
+  }
+}

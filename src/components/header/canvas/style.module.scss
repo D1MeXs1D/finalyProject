@@ -1,0 +1,64 @@
+.bodyMenuNone {
+  display: none;   
+  
+}
+
+.wrapper {
+    width: 80%;
+    margin-top:140px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.bodyMenu {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+    height: 100vh;
+    background-color: #029491;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    animation: shiftBodyMenu 0.8s linear forwards;
+}
+
+@keyframes shiftBodyMenu {
+    from {
+        top: 0;
+        left: 440px
+    }
+
+    to {
+        
+        left: 0;
+        display: block;
+    }
+}
+
+.bodyMenuShiftBack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 440px;
+    width: 100%;
+    height: 100vh;
+    background-color: #029491;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    animation: shiftBodyMenuBack 0.4s linear forwards;
+}
+
+
+@keyframes shiftBodyMenuBack {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 440px;
+
+    }
+}

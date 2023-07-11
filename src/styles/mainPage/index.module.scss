@@ -1,0 +1,595 @@
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  .sectionRequest {
+    display: flex;
+    width: 1200px;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+
+      span:nth-of-type(1) {
+        width: 500px;
+        font-family: 'Ferry';
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 72px;
+        letter-spacing: 0.01em;
+        color: #000000;
+      }
+
+      span:nth-of-type(2) {
+        margin-top: 20px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        color: #000000;
+      }
+    }
+
+    .button{
+      background: #5970FF;
+      border-radius: 5px;
+      width: 335px;
+      height: 59px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 70px;
+      font-family: 'Inter';
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 27px;
+      letter-spacing: 0.01em;
+      color: #FFFFFF;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+   
+
+    .button:hover {
+      background-color: #D2D2D2;
+      color: #000000;
+    }
+
+    .image {
+      width: 700px;
+    }
+  }
+
+  h1 {
+    font-family: 'Ferry';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 54px;
+    letter-spacing: 0.01em;
+    color: #000000;
+
+  }
+
+  .slider {
+    width: 1200px;
+    display: flex;
+    height: 250px;
+    align-items: center;
+    counter-reset: slide;
+    overflow: hidden;
+
+    .slides {
+     
+
+      .cards{
+        width: 2500px;
+        display: flex;
+        justify-content: start;
+        position: relative;
+        gap: 24px;
+        left: 13px;
+      }
+
+      .card {
+        width: 375px;
+        height: 225px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        img {
+         margin: 20px;
+        }
+
+        span {
+          margin-left: 20px;
+          width: 320px;
+          word-wrap: break-word;
+          font-family: 'Inter';
+          font-size: 18px;
+          line-height: 22px;
+          letter-spacing: 0.01em;
+          color: #000000;
+
+        }
+      }
+    }  
+  }
+
+  .PricePlans {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardsRate {
+    width: 1200px;
+    margin: 70px auto 100px auto;
+    display: flex;
+    justify-content: space-between;
+
+    .cardRate {
+      width: 375px;
+      height: 540px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .headCard {
+        position: relative;
+        width: 100%;
+        height: 132px;        
+        border-radius: 10px 10px 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .wrapHeadCards{ 
+          width: 90%;
+          display: flex;
+          align-items: center;
+
+          .textTittle {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            span:nth-child(1) {
+              font-family: 'Inter';
+              font-weight: 500;
+              font-size: 30px;
+              line-height: 36px;
+              letter-spacing: 0.01em;
+              color: #000000;
+            }
+  
+            span:nth-child(2) {
+              width: 270px;
+              font-family: 'Inter';
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 22px;
+              color: #000000;
+            }
+          }
+
+          img {
+            position: absolute;
+            right: 15px;
+          }
+        }
+      }
+
+      .price{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        
+        .sell {
+          display: flex;
+          align-items: center;
+          margin: 30px 0 30px 0;
+          gap: 20px;
+
+          span:nth-child(1){
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 36px;
+            letter-spacing: 0.01em;
+            color: #000000;
+          }
+          span:nth-child(2){
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 30px;
+            letter-spacing: 0.01em;
+            text-decoration-line: line-through;
+            color: #000000;
+            opacity: 0.5;
+          }
+        }
+        span {
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          height: 22px;
+          line-height: 22px;
+          letter-spacing: 0.01em;
+          color: #000000;
+        }
+
+        .list {
+          margin-top: 40px;
+
+          h2 {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.01em;
+            color: #000000;
+          }
+
+           ul {
+            list-style: url(../../image/icons/mainPage/checkMark.svg);
+            margin-left: 30px;
+            padding: 0;
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 17px;
+            letter-spacing: 0.01em;
+            color: #000000;
+
+           }
+        }
+      } 
+
+      button {
+        cursor: pointer;
+        margin-top: 40px;
+        width: 350px;
+        height: 60px;
+        border: none;
+        background: #5970FF;
+        border-radius: 5px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        transition: 0.3s ease-in-out;
+      }
+
+      button:hover {
+        background-color: #D2D2D2;
+        color: #000000;
+      }
+    }
+
+    .cardRate:nth-child(1) .headCard {
+      background: #ffb64f77;
+    }
+    .cardRate:nth-child(2) .headCard  {
+      background: #7ce3e1b6;
+    }
+    .cardRate:nth-child(3) .headCard {
+      background: #000000;
+
+        .wrapHeadCards{ 
+          .textTittle {
+            span:nth-child(1) {
+              color: #FFFFFF;
+            }
+            span:nth-child(2) {
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width:440px) {
+    .wrapper {
+      width: 350px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    
+      .sectionRequest {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+    
+        .text {
+          display: flex;
+          flex-direction: column;
+    
+          span:nth-of-type(1) {
+            width: 350px;
+            font-size: 28px;
+            font-family: Ferry;
+            font-weight: 900;
+            line-height: normal;
+            letter-spacing: 0.28px;
+          }
+    
+          span:nth-of-type(2) {
+            margin-top: 20px;
+            color: #000;
+            font-size: 18px;
+           
+          }
+        }
+    
+        .button{
+          background: #5970FF;
+          border-radius: 5px;
+          width: 300px;
+          height: 59px;
+          margin: 30px auto ;
+          cursor: pointer;
+        }
+       
+    
+        .image {
+          width: 350px;
+        }
+      }
+    
+      h1 {
+        width: 250px;
+        font-size: 30px;
+        font-family: Ferry;
+        line-height: normal;
+        letter-spacing: 0.28px;
+      }
+    
+      .slider {
+        width: 330px;
+        display: flex;
+        height: 250px;
+        align-items: center;
+        counter-reset: slide;
+        overflow: hidden;
+    
+        .slides {
+          .cards{
+            width: 2500px;
+            display: flex;
+            justify-content: start;
+            position: relative;
+            gap: 24px;
+            left: 13px;
+          }
+    
+          .card {
+            width: 300px;
+            height: 220px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+    
+            img {
+             margin: 20px;
+             width: 50px;
+            }
+    
+            span {
+              width: 280px;
+              word-wrap:break-word;
+              font-family: 'Inter';
+              font-size: 18px;
+              line-height: 22px;
+              letter-spacing: 0.01em;
+              color: #000000;
+    
+            }
+          }
+        }  
+      }
+    
+      .PricePlans {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .cardsRate {
+        width: 350px;
+        margin: 40px 0 40px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        
+        .cardRate {
+          width: 335px;
+          height: 540px;
+          margin: 40px 0;
+          background: #FFFFFF;
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+          border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+    
+          .headCard {
+            position: relative;
+            width: 100%;
+            height: 132px;        
+            border-radius: 10px 10px 0px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            .wrapHeadCards{ 
+              width: 90%;
+              display: flex;
+              align-items: center;
+    
+              .textTittle {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+    
+                span:nth-child(1) {
+                  font-family: 'Inter';
+                  font-weight: 500;
+                  font-size: 30px;
+                  line-height: 36px;
+                  letter-spacing: 0.01em;
+                  color: #000000;
+                }
+      
+                span:nth-child(2) {
+                  width: 270px;
+                  font-family: 'Inter';
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 22px;
+                  color: #000000;
+                }
+              }
+    
+              img {
+                position: absolute;
+                right: 15px;
+              }
+            }
+          }
+    
+          .price{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            
+            .sell {
+              display: flex;
+              align-items: center;
+              margin: 30px 0 30px 0;
+              gap: 20px;
+    
+              span:nth-child(1){
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 36px;
+                letter-spacing: 0.01em;
+                color: #000000;
+              }
+              span:nth-child(2){
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 30px;
+                letter-spacing: 0.01em;
+                text-decoration-line: line-through;
+                color: #000000;
+                opacity: 0.5;
+              }
+            }
+            span {
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              height: 22px;
+              line-height: 22px;
+              letter-spacing: 0.01em;
+              color: #000000;
+            }
+    
+            .list {
+              margin-top: 40px;
+    
+              h2 {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.01em;
+                color: #000000;
+              }
+    
+               ul {
+                list-style: url(../../image/icons/mainPage/checkMark.svg);
+                margin-left: 30px;
+                padding: 0;
+                font-family: 'Inter';
+                font-weight: 400;
+                font-size: 17px;
+                letter-spacing: 0.01em;
+                color: #000000;
+    
+               }
+            }
+          } 
+    
+          button {
+            cursor: pointer;
+            margin: 40px 0;
+            width: 290px;
+            height: 60px;
+            border: none;
+            background: #5970FF;
+            border-radius: 5px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.01em;
+            color: #FFFFFF;
+            transition: 0.3s ease-in-out;
+          }
+    
+          button:hover {
+            background-color: #D2D2D2;
+            color: #000000;
+          }
+        }
+    
+        .cardRate:nth-child(1) .headCard {
+          background: #ffb64f77;
+        }
+        .cardRate:nth-child(2) .headCard  {
+          background: #7ce3e1b6;
+        }
+        .cardRate:nth-child(3) .headCard {
+          background: #000000;
+    
+            .wrapHeadCards{ 
+              .textTittle {
+                span:nth-child(1) {
+                  color: #FFFFFF;
+                }
+                span:nth-child(2) {
+                  color: #FFFFFF;
+                }
+              }
+            }
+          }
+        }
+      }
+   }

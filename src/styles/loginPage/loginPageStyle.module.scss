@@ -1,0 +1,521 @@
+.wrapper {
+  width: 1200px;
+  margin: 70px auto 60px auto ;
+  display: flex;
+  justify-content: center;
+
+  .tittleFromLoginBottom {
+    display: none;
+  }
+
+  .image {
+    margin: 0px 100px;
+  }
+  
+  .imageMobile, .image {
+    display: none;
+  }
+
+  .tittleFromLogin {
+    width: 62%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 550px;
+    
+    .tittle {
+      font-family: Ferry;
+      font-size: 40px;
+    }
+
+    .image {
+      margin: 0px 100px;
+      display: block;
+    }
+    
+    .imageMobile {
+      // margin: 0px 100px;
+      display: none;
+    }
+  }
+
+  .modalWindow {
+    width: 38%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .imageCastle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: -45px -20px;
+    }
+
+    .window {
+      width: 429px;
+      height: 550px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .option{
+        width: 380px;
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Inter';
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 40px;
+        margin: 25px 0px 20px 0px;
+
+        span:nth-of-type(1), span:nth-of-type(2) {
+          text-align: center;
+          cursor: pointer;
+        }
+
+        span:nth-of-type(1)::after, span:nth-of-type(2)::after {
+          content: ' ';
+          display: block;
+          width: 90%;
+          margin: 5px auto 0 auto;
+          background-color: #029491;
+          height: 2px;
+        }
+
+        span:nth-of-type(2)::after {
+          background-color: #C7C7C7;
+        }
+
+        span:nth-of-type(1) {
+          width: 150px;
+          color: #029491;
+        }
+
+        span:nth-of-type(2) {
+          width: 210px;
+          color: #C7C7C7;
+        }
+
+      }
+
+      .textForLogin {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+
+        .span {
+          font-family: 'Inter';
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.02em;
+          color: #949494;
+          margin-bottom: 15px;
+        }
+
+        .errorMessageNone {
+          scale: 0;
+        }
+
+        .errorMessageActive {
+          transition:  0.5s ease-in-out;
+          scale: 1;
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 0.01em;
+          color: #FF5959;
+          text-align: center;
+          margin-top: 6px;
+        }
+
+        .inputError {
+          width: 355px;
+          padding: 0 10px;
+          height: 43px;
+          border-radius: 5px;
+          border: 1px solid red;
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+          border-radius: 5px;
+
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.01em;
+          color: #000000;
+        }
+
+        .input {
+          width: 355px;
+          padding: 0 10px;
+          height: 43px;
+          border-radius: 5px;
+          border: 1px solid #C7C7C7;
+          // border: 1px solid red;
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+          border-radius: 5px;
+
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.01em;
+          color: #000000;
+        }
+      }
+
+      .buttonOne {
+        width: 380px;
+        height: 60px;
+        background: #5970FF;
+        border-radius: 5px; 
+        border: none;
+        // margin-top: 20px;
+        cursor: pointer;
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27px;
+        color: white;
+        transition: .6s ease;
+      }
+
+      .buttonOneDisabled {
+        width: 380px;
+        height: 60px;
+        background: #5970FF;
+        border-radius: 5px; 
+        border: none;
+        cursor:not-allowed;
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27px;
+        color: white;
+        opacity: 0.5;
+        transition: .6s ease;
+       }
+
+
+      .buttonTwo {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration-line: underline;
+        color: #5970FF;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin: 15px 0 30px 0;
+      }
+
+
+      .bottomButtons {
+        width: 380px;
+
+          .tittleForButtons {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.02em;
+            color: #949494;
+            margin-bottom: 150px;
+        }
+
+        
+        .buttons {
+          display: flex;
+          width: 310px;
+          justify-content: start;
+          gap: 10px;
+          margin-top: 15px;
+            .buttonSocialNetwork {
+            width: 96px;
+            height: 31px;
+            background: #FFFFFF;
+            border: 1px solid rgba(89, 112, 255, 0.51);
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:440px) {
+  .wrapper {
+    width: 350px;
+    margin: 30px auto ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  
+    .tittleFromLoginBottom {
+      display: none;
+    }
+    
+    
+    .imageMobile {
+      display: block;
+      margin-top: 50px;
+    }
+
+    .tittleFromLogin {
+      display: block;
+      justify-content: space-around;
+      flex-direction: column;
+      width: 350px; 
+      height: 200px;
+      
+      .tittle {
+        font-family: Ferry;
+        font-size: 22px; 
+      }
+  
+      .image {
+        display: none;
+      }
+    }
+  
+    .modalWindow {
+      width: 100%;
+      height: 550px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      flex-direction: column;
+
+      .imageCastle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: -55px 60px;
+      }
+  
+      .window {
+        width: 350px;
+        height: 550px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+  
+        .option{
+          width: 300px;
+          display: flex;
+          justify-content: space-between;
+          font-family: 'Inter';
+          font-size: 16px;
+          line-height: 19px;
+          margin-bottom: 40px;
+          margin: 25px 0px 20px 0px;
+  
+          span:nth-of-type(1), span:nth-of-type(2) {
+            text-align: center;
+            cursor: pointer;
+          }
+  
+          span:nth-of-type(1)::after, span:nth-of-type(2)::after {
+            content: ' ';
+            display: block;
+            width: 90%;
+            margin: 5px auto 0 auto;
+            background-color: #029491;
+            height: 2px;
+          }
+  
+          span:nth-of-type(2)::after {
+            background-color: #C7C7C7;
+          }
+  
+          span:nth-of-type(1) {
+            width: 150px;
+            color: #029491;
+          }
+  
+          span:nth-of-type(2) {
+            width: 210px;
+            color: #C7C7C7;
+          }
+  
+        }
+  
+        .textForLogin {
+          display: flex;
+          flex-direction: column;
+          margin: 10px 0;
+  
+          .span {
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.02em;
+            color: #949494;
+            margin-bottom: 15px;
+          }
+  
+          .errorMessageNone {
+            scale: 0;
+          }
+  
+          .errorMessageActive {
+            transition:  0.5s ease-in-out;
+            scale: 1;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.01em;
+            color: #FF5959;
+            text-align: center;
+            margin-top: 6px;
+          }
+  
+          .inputError {
+            width: 300px;
+            padding: 0 10px;
+            height: 43px;
+            border-radius: 5px;
+            border: 1px solid red;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 5px;
+  
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.01em;
+            color: #000000;
+          }
+  
+          .input {
+            width: 300px;
+            padding: 0 10px;
+            height: 43px;
+            border-radius: 5px;
+            border: 1px solid #C7C7C7;
+            // border: 1px solid red;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 5px;
+  
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.01em;
+            color: #000000;
+          }
+        }
+  
+        .buttonOne {
+          width: 380px;
+          height: 60px;
+          background: #5970FF;
+          border-radius: 5px; 
+          border: none;
+          // margin-top: 100px;
+          cursor: pointer;
+          font-family: 'Inter';
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 27px;
+          color: white;
+          transition: .6s ease;
+        }
+  
+        .buttonOneDisabled {
+          width: 325px;
+          height: 60px;
+          background: #5970FF;
+          border-radius: 5px; 
+          border: none;
+          cursor:not-allowed;
+          font-family: 'Inter';
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 27px;
+          color: white;
+          opacity: 0.5;
+          transition: .6s ease;
+         }
+  
+  
+        .buttonTwo {
+          font-family: 'Inter';
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          text-decoration-line: underline;
+          color: #5970FF;
+          background: none;
+          border: none;
+          cursor: pointer;
+          margin: 15px 0 30px 0;
+        }
+  
+  
+        .bottomButtons {
+          width: 300px;
+  
+            .tittleForButtons {
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 19px;
+              letter-spacing: 0.02em;
+              color: #949494;
+              margin-bottom: 150px;
+          }
+  
+          
+          .buttons {
+            display: flex;
+            width: 300px;
+            justify-content: start;
+            gap: 10px;
+            margin-top: 15px;
+              .buttonSocialNetwork {
+              width: 96px;
+              height: 31px;
+              background: #FFFFFF;
+              border: 1px solid rgba(89, 112, 255, 0.51);
+              border-radius: 3px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  } 
+}

@@ -1,0 +1,42 @@
+.wrapper {
+  right: 300px;
+  border-radius: 5px;
+  background: rgba(217, 217, 217, 0.7647058824);
+  position: absolute;
+  width: 170px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper .childLineWrapper {
+  height: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.wrapper .text, .wrapper .usedCompany {
+  color: #000;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.wrapper .usedCompany, .wrapper .LimitCompany {
+  font-size: 14px;
+  font-weight: 700;
+}
+.wrapper .LimitCompany {
+  color: #8AC540;
+}
+
+@media (max-width: 440px) {
+  .wrapper {
+    right: 45px;
+    width: 160px;
+  }
+}/*# sourceMappingURL=style.module.css.map */

@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main, .mainNoScroll {
+  zoom:normal;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.mainNoScroll {
+ overflow-y: hidden;
+}
+
+@font-face {
+  font-family: Ferry;
+  src: url('../fonst/Ferry/ferry_black.otf');
+}
